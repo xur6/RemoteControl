@@ -83,7 +83,7 @@ void loop(){
           Serial.println("9");
           break ;      
         }
-        key_value = results.value;
+        key_value = results.value; // set the key as previous press to avoid 0XFFF case;
         irrecv.resume(); //receive another input
   }
 }
